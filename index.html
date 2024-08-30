@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms with grid</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <h1>Connect With Our Team</h1>
+        <h2 style="font-size: smaller;">Fill the form so that our team can reach out to you</h2>
+        <div class="grid-items">
+            <label for="name"></label>
+            <input type="text" name="Name" placeholder="Name">
+            <label for="email"></label>
+            <input type="text" name="Email" placeholder="Email">
+        </div>
+        <label for="phone"></label>
+        <input type="number" name="phone" placeholder="Phone Number">
+        <div id="button">
+            <button type="submit" style="color: #162AE3; font-size: 18px;">Submit</button>
+        </div>
+    </div>
+
+
+    <div class="contact-container" style="margin-top: 10%;">
+        <div class="contact-image">
+            <img src="/foto/chloe-lefleur-bCvBMF8qz9s-unsplash.jpg" alt="Contact Image" />
+        </div>
+        <div class="contact-details">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <label for="name"></label>
+                <input type="text" id="name" name="name" placeholder="Full Name" />
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="E-mail" />
+                <label for="message"></label>
+                <input id="message" name="message" placeholder="Message" />
+                <button type="submit">Contact Us</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <h3>Contact</h3>
+            <p>hi@green.com</p>
+            <h3>Based in</h3>
+            <p>New York,<br />California, Ohio</p>
+            <div class="social-icons">
+                <a href="#"><img src="/foto/instagram-icon_1057-2227.jpg.avif" alt="Facebook" /></a>
+                <a href="#"><img src="/foto/Twitter.png" alt="Instagram" /></a>
+                <a href="#"><img src="/foto/face.png" alt="Twitter" /></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="appointment-container" style="margin-top: 10%;">
+        <h1>Book your appointment now</h1>
+        <p>So our team can reach out to you on time</p>
+        <form class="appointment-form">
+            <div class="left-group">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="eg: John Doe" />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="eg: john@email.com" />
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+971 543210987" />
+                </div>
+            </div>
+            <div class="right-group">
+                <div class="form-group">
+                    <label for="date">Available Date</label>
+                    <select id="date" name="date">
+                        <option value="" disabled selected>Select</option>
+                        <option value="2024-08-30">August 30, 2024</option>
+                        <option value="2024-09-01">September 1, 2024</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Share Your Message</label>
+                    <textarea id="message" name="message" placeholder="Message"></textarea>
+                </div>
+                <button type="submit" class="submit-button3">
+                    Book Now <span>&#x27A4;</span>
+                </button>
+            </div>
+        </form>
+    </div>
+
+
+
+    <div class="job-container" style="margin-top: 10%;">
+        <h1>Job Application ( Web )</h1>
+        <form class="job-application-form">
+            <div class="job-form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Enter First Name.......">
+            </div>
+            <div class="job-form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Enter Last Name.......">
+            </div>
+            <div class="job-form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email.......">
+            </div>
+            <div class="job-form-group">
+                <label for="job-role">Job Role</label>
+                <select id="job-role" name="job-role">
+                    <option value="backend">Backend Developer</option>
+                    <option value="frontend">Frontend Developer</option>
+                    <option value="fullstack">Fullstack Developer</option>
+                </select>
+            </div>
+            <div class="job-form-group address-group">
+                <label for="address">Enter Address</label>
+                <textarea id="address" name="address"></textarea>
+            </div>
+            <div class="job-form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="Enter City.......">
+            </div>
+            <div class="job-form-group">
+                <label for="pincode">Pincode</label>
+                <input type="text" id="pincode" name="pincode" placeholder="Enter Pincode.......">
+            </div>
+            <div class="job-form-group">
+                <label for="start-date">Start Date</label>
+                <input type="date" id="start-date" name="start-date">
+            </div>
+            <div class="job-form-group">
+                <label for="upload-cv">Upload Your CV</label>
+                <input type="file" id="upload-cv" name="upload-cv">
+            </div>
+            <div class="job-form-group full-width">
+                <button type="submit" class="apply-button">Apply Now</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
